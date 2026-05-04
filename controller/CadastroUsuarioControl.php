@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  if ($resultado) {
  echo "<script>
  alert('Usuário cadastrado com sucesso!');
- window.location.href = '../concluido.php';
+ window.location.href = '../index.php';
  </script>";
  } else {
  echo "<script>

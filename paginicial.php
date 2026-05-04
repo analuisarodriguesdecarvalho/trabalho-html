@@ -27,71 +27,7 @@ $generos = [
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/teste.css">
-    <style>
-        .sidebar nav ul li a {
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-        .card-img-overlay-play {
-            position: absolute;
-            bottom: 70px;
-            right: 12px;
-            opacity: 0;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            transform: translateY(8px);
-        }
-        .card:hover .card-img-overlay-play {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .card { position: relative; }
-        .genre-card {
-            background: rgba(255,255,255,0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 12px;
-            padding: 25px 15px;
-            text-align: center;
-            transition: 0.3s;
-        }
-        .genre-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255,255,255,0.08);
-            border-color: rgba(255,255,255,0.2);
-        }
-        .genre-card h2 { font-size: 1.1rem; margin-bottom: 12px; font-weight: 400; color: #fff; }
-        .genre-card button {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.15);
-            color: rgba(255,255,255,0.7);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .genre-card button:hover { background: white; color: black; }
-        .genre-card.hiphop    { border-bottom: 3px solid #7b4fb6; }
-        .genre-card.jazz      { border-bottom: 3px solid #3b5998; }
-        .genre-card.pop       { border-bottom: 3px solid #3498db; }
-        .genre-card.eletronica{ border-bottom: 3px solid #5d5d6a; }
-        .genre-card.rock      { border-bottom: 3px solid #e74c3c; }
-        .genre-card.mpb       { border-bottom: 3px solid #5c6bc0; }
-        .genre-card.sertanejo { border-bottom: 3px solid #f1c40f; }
-        .genre-card.funk      { border-bottom: 3px solid #e67e22; }
-        .genre-card.reggae    { border-bottom: 3px solid #7e57c2; }
-        .genre-card.classica  { border-bottom: 3px solid #ecf0f1; }
-        .genre-card.lofi      { border-bottom: 3px solid #9b59b6; }
-        .genre-card.country   { border-bottom: 3px solid #a0522d; }
-        .genre-card.forro     { border-bottom: 3px solid #ff5733; }
-        .genre-card.crista    { border-bottom: 3px solid #ffffff; }
-        .genre-card.kpop      { border-bottom: 3px solid #ff69b4; }
-        .genre-card.rap-trap  { border-bottom: 3px solid #616161; }
-    </style>
+  
 </head>
 <body>
 
@@ -110,6 +46,11 @@ $generos = [
                 <li class="sidebar-profile">
                     <i class="fas fa-user"></i> Ver Perfil  
                 </li>
+                <li><div class="sidebar-premium-banner">
+            <p>Veja os Usuarios</p>
+            <a href="./view/listarUsuarios.php" class="btn-premium-sidebar">Listar</a>
+        </div>
+        </li>
             </ul>
         </nav>
         <div class="sidebar-premium-banner" style="margin-top:10px;">

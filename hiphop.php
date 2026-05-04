@@ -27,20 +27,20 @@
             <div class="musica">
                 <h2>50 Cent - In da Club</h2>
                <div class="star-rating">
-    <input type="radio" id="m1-s5" name="rating-1" value="5">
-    <label for="m1-s5">★</label>
-    
-    <input type="radio" id="m1-s4" name="rating-1" value="4">
-    <label for="m1-s4">★</label>
-    
-    <input type="radio" id="m1-s3" name="rating-1" value="3">
-    <label for="m1-s3">★</label>
+    <input type="radio" id="m1-s1" name="rating-1" value="1">
+    <label for="m1-s1">★</label>
     
     <input type="radio" id="m1-s2" name="rating-1" value="2">
     <label for="m1-s2">★</label>
     
-    <input type="radio" id="m1-s1" name="rating-1" value="1">
-    <label for="m1-s1">★</label>
+    <input type="radio" id="m1-s3" name="rating-1" value="3">
+    <label for="m1-s3">★</label>
+    
+    <input type="radio" id="m1-s4" name="rating-1" value="4">
+    <label for="m1-s4">★</label>
+    
+    <input type="radio" id="m1-s5" name="rating-1" value="5">
+    <label for="m1-s5">★</label>
 </div>
             </div>
 

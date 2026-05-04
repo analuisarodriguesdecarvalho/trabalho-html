@@ -12,56 +12,7 @@ $usuario = $usuarioDAO->listarUsuario();
     <title>Listar Usuários</title>
     <link rel="stylesheet" href="./assets/css/estilo.css">
 
-    <style>
-          body {
-            background-color: #FFEFD3;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table {
-            width: 700px;
-            border-collapse: collapse ;
-            /* Obrigatório para ter o título da tabela fixo */
-            position: relative;
-        }
-        td, th {
-            border: 1px solid #294C60;
-            padding: 20px;
-        }
-        thead, tfoot {
-            background-color: #001B2E;
-            color: rgb(0, 0, 0);
-        }
-
-        thead > tr > th {
-            /* No título da linha do cabeçalho vou grudar "sticky" */
-            position: sticky; /* grudar */
-            top: 0; /* na posição 0 */
-            background-color: #001B2E;
-            color: #fff;
-
-        }
-        td.num {
-            text-align: right;
-        
-        }
-        caption {
-            /* Tamanho da fonte */
-            font-size: 1.5em;
-            /* Para colocar em negrito */
-            font-weight: bold;
-            /* Para deixar mais espaçado */
-            padding: 15px;
-            /* Colocar um fundo no meu caption */
-            background-color: lightgray;
-
-        }
-        
-        tbody > tr:nth-child(2n) {
-            background-color: #294C60;
-
-        }
-
-    </style>
+  
 </head>
 <body>
     <h1>Lista de Usuários</h1>
