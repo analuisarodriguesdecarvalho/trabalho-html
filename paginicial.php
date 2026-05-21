@@ -1,4 +1,8 @@
 <?php
+require_once __DIR__ . '/model/dao/UsuarioDAO.php';
+
+$usuarioDAO = new UsuarioDAO();
+
 $generos = [
     ['nome' => 'Hip-Hop',           'classe' => 'hiphop',    'link' => 'hiphop.php',          'color' => '#e91e63'],
     ['nome' => 'Jazz',              'classe' => 'jazz',      'link' => 'jazz.php',            'color' => '#ff9800'],
@@ -27,6 +31,7 @@ $generos = [
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/paginicial.css">
     <style>
         .sidebar nav ul li a {
             text-decoration: none;
@@ -107,8 +112,10 @@ $generos = [
                     <i class="fas fa-book"></i> Sua Biblioteca
                 </a>
                </li>
-                <li class="sidebar-profile">
-                    <i class="fas fa-user"></i> Ver Perfil  
+                <li>
+                    <a href="perfil.php">
+                        <i class="fas fa-user"></i> Ver Perfil
+                    </a>
                 </li>
             </ul>
         </nav>

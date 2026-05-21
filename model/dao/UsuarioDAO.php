@@ -141,5 +141,33 @@ class UsuarioDAO {
             return false;
         }
     }
+
+    public function contarSeguidores($usuarioId) {
+        try {
+            $pdo = Conexao::getConexao();
+            $sql = "SELECT COUNT(*) as total FROM seguidores WHERE seguido_id = ?";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindValue(1, $usuarioId);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result['total'] ?? 0;
+        } catch (PDOException $e) {
+            return 0;
+        }
+    }
+
+    public function contarSeguindo($usuarioId) {
+        try {
+            $pdo = Conexao::getConexao();
+            $sql = "SELECT COUNT(*) as total FROM seguidores WHERE seguidor_id = ?";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindValue(1, $usuarioId);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result['total'] ?? 0;
+        } catch (PDOException $e) {
+            return 0;
+        }
+    }
 }
 ?>

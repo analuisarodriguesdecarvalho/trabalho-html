@@ -1,0 +1,272 @@
+/* ========== ESTILOS DA PÁGINA LISTA ========== */
+
+.lista-header-section {
+    border-radius: 16px;
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.lista-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-header-content i {
+    font-size: 64px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.lista-header-content h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.lista-header-content p {
+    margin: 0 0 24px 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Seção de Músicas */
+.lista-musicas {
+    background: rgba(24, 24, 24, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    margin-bottom: 40px;
+}
+
+.musicas-header {
+    display: grid;
+    grid-template-columns: 60px 1fr 200px 100px 80px;
+    gap: 12px;
+    padding: 16px 20px;
+    background: rgba(40, 40, 40, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.musica-linha {
+    display: grid;
+    grid-template-columns: 60px 1fr 200px 100px 80px;
+    gap: 12px;
+    padding: 12px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+}
+
+.musica-linha:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.musica-linha:last-child {
+    border-bottom: none;
+}
+
+.col-numero {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.col-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.col-titulo i {
+    color: #1db954;
+}
+
+.col-artista {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.col-duracao {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.col-score {
+    text-align: center;
+}
+
+.score-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1db954, #7c4dff);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Lista vazia */
+.musicas-vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.musicas-vazio i {
+    font-size: 3rem;
+    color: #7c4dff;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.musicas-vazio p {
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+}
+
+.btn-adicionar-musica {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #7c4dff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-adicionar-musica:hover {
+    background: #9c6fff;
+}
+
+/* Lista não encontrada */
+.lista-vazio {
+    text-align: center;
+    padding: 60px 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lista-vazio i {
+    font-size: 4rem;
+    color: #7c4dff;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lista-vazio h2 {
+    margin: 20px 0 10px 0;
+    color: #fff;
+}
+
+.btn-voltar-bottom {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background: rgba(125, 77, 255, 0.2);
+    border: 1px solid #7c4dff;
+    color: #7c4dff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-voltar-bottom:hover {
+    background: #7c4dff;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .musicas-header {
+        grid-template-columns: 50px 1fr 150px 80px 70px;
+    }
+
+    .musica-linha {
+        grid-template-columns: 50px 1fr 150px 80px 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lista-header-section {
+        padding: 40px 20px;
+    }
+
+    .lista-header-content h1 {
+        font-size: 2rem;
+    }
+
+    .musicas-header {
+        grid-template-columns: 40px 1fr 100px 60px;
+        gap: 8px;
+        padding: 12px 12px;
+        font-size: 0.75rem;
+    }
+
+    .musica-linha {
+        grid-template-columns: 40px 1fr 100px 60px;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .col-artista {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-header-content i {
+        font-size: 48px;
+    }
+
+    .lista-header-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .musicas-header,
+    .musica-linha {
+        grid-template-columns: 35px 1fr 40px;
+    }
+
+    .col-duracao,
+    .col-score {
+        display: none;
+    }
+
+    .musica-linha {
+        padding: 10px;
+    }
+
+    .col-titulo {
+        gap: 8px;
+    }
+
+    .col-titulo i {
+        font-size: 0.8rem;
+    }
+}

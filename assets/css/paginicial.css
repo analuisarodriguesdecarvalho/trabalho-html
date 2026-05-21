@@ -72,3 +72,155 @@
     cursor: pointer;
     font-size: 0.9rem;
 }
+
+/* ========== ESTILOS DO PERFIL ========== */
+.perfil-section {
+    background: linear-gradient(135deg, #1db954 0%, #7c4dff 100%);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.perfil-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-circle {
+    width: 140px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+
+.perfil-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.perfil-info h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.perfil-email {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.95;
+}
+
+.perfil-status {
+    margin: 12px 0 0 0;
+    font-size: 0.95rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.status-badge.ativo {
+    color: #1db954;
+}
+
+.status-badge.inativo {
+    color: #ff9800;
+}
+
+.perfil-stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.perfil-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #7c4dff, transparent);
+    border: none;
+    margin: 40px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .perfil-section {
+        padding: 24px;
+    }
+
+    .perfil-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .avatar-circle {
+        width: 100px;
+        height: 100px;
+        font-size: 36px;
+    }
+
+    .perfil-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .perfil-stats {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-box {
+        flex: 1;
+        min-width: 120px;
+    }
+}
